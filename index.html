@@ -11,18 +11,18 @@
     <header>
       <h1>Informações sobre Five Nights at Frickbears 3!!</h1>
       <nav>
-        <a href="#info">Infos gerais</a>
-        <a href="#gallery">Galeria</a>
-        <a href="#suggestions">Sugestões</a>
+        <a href="#info" class="navLink">Infos gerais</a>
+        <a href="#gallery" class="navLink">Galeria</a>
+        <a href="#suggestions" class="navLink">Sugestões</a>
       </nav>
     </header>
     
     
     <main>
       <section id="info">
-        <h2>Informações Gerais</h2>
+        <h2>Informações Gerais</h2><br>
         <p>"Five Nights at Frickbears 3", ou só "Frickbears 3" é uma <i>fangame</i> feita por SpookyRick, que traz um tom cômico à franquia de Five Nights at Freddy's,
-             junto de um estilo de arte <i>cartoonesco</i> em pixel art.</p>
+             junto de um estilo de arte <i>cartoonesco</i> em pixel art.</p><br>
         <p>No jogo, você trabalha na <b>Freddy Frickbear's Pizza</b> como um guarda de segurança, seguindo a <i>gameplay</i> clássica de um jogo de FNAF. Olhe as câmeras,
              feche as portas se necessário e sobreviva até as 6 da manhã. Porém, entre as noites de gameplay, você visita outras localizações em busca de outros
              animatrônicos para a sua pizzaria, trazendo um aspecto <i>roguelike</i> para o jogo. Dependendo do guarda que você escolheu no início do jogo, você terá que
@@ -36,27 +36,27 @@
           </tr>
           
           <tr>
-            <th>Jeremy</th>
-            <th>Fácil</th>
-            <th>1</th>
+            <td>Jeremy</td>
+            <td>Fácil</td>
+            <td>1</td>
           </tr>
           
           <tr>
-            <th>Mike</th>
-            <th>Normal</th>
-            <th>2</th>
+            <td>Mike</td>
+            <td>Normal</td>
+            <td>2</td>
           </tr>
           
           <tr>
-            <th>Vanessa</th>
-            <th>Difícil</th>
-            <th>3</th>
+            <td>Vanessa</td>
+            <td>Difícil</td>
+            <td>3</td>
           </tr>
           
           <tr>
-            <th>Fritz</th>
-            <th>Lunático</th>
-            <th>4</th>
+            <td>Fritz</td>
+            <td>Lunático</td>
+            <td>4</td>
           </tr>
         </table>
         
@@ -76,12 +76,12 @@
       
       <section id="gallery">
         <h2>Galeria</h2>
-        <img src="./img/frickbears3-title.png" alt="Tela inicial do Frickbears 3" />
-        <img src="./img/frickbears3-mike-intro.png" alt="Introdução do guarda Mike (imagem tirada do canal Chaos Lord)" />
-        <img src="./img/frickbears3-office.png" alt="O escritório da Freddy Frickbear's Pizza" />
-        <img src="./img/frickbears3-cams-stage.png" alt="O tablet de câmeras, com a câmera do palco principal selecionada" />
-        <img src="./img/frickbears3-cams-puppet.png" alt="O tablet de câmeras, com a câmera da entrada selecionada" />
-        <img src="./img/frickbears3-office-tv.png" alt="A TV do escritório ligada, mostrando o Bonnie original 'nadando' no ar" />
+        <img class="galleryImg" src="./img/frickbears3-title.png" alt="Tela inicial do Frickbears 3" />
+        <img class="galleryImg" src="./img/frickbears3-mike-intro.png" alt="Introdução do guarda Mike (imagem tirada do canal Chaos Lord)" />
+        <img class="galleryImg" src="./img/frickbears3-office.png" alt="O escritório da Freddy Frickbear's Pizza" />
+        <img class="galleryImg" src="./img/frickbears3-cams-stage.png" alt="O tablet de câmeras, com a câmera do palco principal selecionada" />
+        <img class="galleryImg" src="./img/frickbears3-cams-puppet.png" alt="O tablet de câmeras, com a câmera da entrada selecionada" />
+        <img class="galleryImg" src="./img/frickbears3-office-tv.png" alt="A TV do escritório ligada, mostrando o Bonnie original 'nadando' no ar" />
       </section>
       
       
@@ -92,6 +92,7 @@
           <input type="text" id="formName" name="formName">
           <label for="formSuggestion">Sugestão</label>
           <input type="text" id="formSuggestion" name="formSuggestion">
+          <p id="formSpacing">.</p> <!-- deixar um espaco entre o form e o botao -->
           <button id="formButton">Enviar</button>
         </form>
       </section>

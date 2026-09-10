@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #232828;
+  color: #e8eeee;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111414;
+  width: 100%;
+  padding: 1%;
+  padding-top: 2%;
+}
+
+a {
+  color: #c40e13;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+a:visited {
+  color: #ff5f5f;
+}
+
+a:visited:hover {
+  color: #ff9f9f;
+}
+
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  align-items: center;
+}
+
+.navLink {
+  margin: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  white-space: nowrap;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  flex-grow: 1;
+}
+
+section {
+  background-color: #292f2f;
+  margin: 1%;
+  padding: 1%;
+  border-style: hidden;
+  border-radius: 13px;
+  width:98%;
+}
+
+section > * {
+  padding: 1%;
+}
+
+section h2 {
+  padding: 0;
+}
+
+
+
+#info p {
+  padding: 0;
+  padding-left: 1%;
+}
+
+#info table {
+  background-color: #9f9f9f;
+  border: 2px dotted #c40e13;
+  margin: 1%;
+  padding: 0;
+  border-spacing: 0;
+}
+
+#info th {
+  background-color: #000000;
+  border-right: 1px solid #ffffff;
+  padding: 2px;
+  color: #ffffff;
+}
+
+#info td {
+  background-color: #ffffff;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding: 2px;
+  color: #000000;
+}
+
+#info tr:first-child {
+  border-left: 1px solid #000000;
+} /* nao consegui fazer a borda da esquerda funcionar sem deixar as no meio grossas :cry: */
+
+#info tr:last-child th {
+  border-left: 1px solid #000000;
+} /* nem tirar a borda branca da direita do cabecalho :cry: :cry: */
+
+
+
+#gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 13px;
+}
+
+#gallery h2 {
+  grid-column: 1 / -1;
+}
+
+#gallery .galleryImg {
+  width: 100%;
+}
+
+
+
+#suggestions form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+#suggestions form * {
+  margin: 2px;
+}
+
+#suggestions #formSpacing {
+  visibility: hidden;
+}
+
+
+
+footer {
+  background-color: #111414;
+  text-align: center;
+  padding: 1%;
+  padding-bottom: 2%;
+  width: 100%;
+}

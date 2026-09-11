@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 
-body.modoClaro {
+body.escuro {
   background-color: #ffffff;
   color: #232828;
 }
@@ -27,7 +27,7 @@ header {
   padding-top: 2%;
 }
 
-body.modoClaro header {
+body.escuro header {
   background-color: #e9f8f8;
 }
 
@@ -89,7 +89,7 @@ nav {
   border-radius: 13px;
 }
 
-body.modoClaro #themeButton {
+body.escuro #themeButton {
   background-color: #e8eeee;
   background-image: url("./img/icon-moon.png");
   background-size: 50%;
@@ -122,7 +122,7 @@ section h2 {
   padding: 0;
 }
 
-body.modoClaro section {
+body.escuro section {
   background-color: #e8eeee;
 }
 
@@ -210,6 +210,6 @@ footer {
   width: 100%;
 }
 
-body.modoClaro footer {
+body.escuro footer {
   background-color: #e9f8f8;
 }

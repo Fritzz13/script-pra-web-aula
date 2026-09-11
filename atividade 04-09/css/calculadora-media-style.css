@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  visibility: hidden;
+}
+
+.aprovado {
+  visibility: visible;
+  color: #00aa00;
+}
+
+.reprovado {
+  visibility: visible;
+  color: #aa0000;
+}

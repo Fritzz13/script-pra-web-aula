@@ -24,12 +24,19 @@ calcbutton.addEventListener( "click", function (event) {
     
     media = media / qtdnotas;
     outp.innerHTML = `${media}`;
+    
     if (media >= 7) {
       outp.classList.add("aprovado");
+      outp.classList.remove("reprovado");
+      outp.classList.remove("recuperacao");
+    } else if (media >= 4) {
+      outp.classList.add("recuperacao");
+      outp.classList.remove("aprovado");
       outp.classList.remove("reprovado");
     } else {
       outp.classList.add("reprovado");
       outp.classList.remove("aprovado");
+      outp.classList.remove("recuperacao");
     }
   }
 } );

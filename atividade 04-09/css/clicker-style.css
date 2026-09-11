@@ -1,0 +1,15 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#mainButton {
+  color: #ffffff;
+  background-color: #15803d;
+  border: hidden;
+  border-radius: 7px;
+  padding: 16px 32px;
+}

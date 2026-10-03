@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Questao 9</title>
+  </head>
+  
+  <body>
+    <script>
+      const senha = "ifpb2026";
+      let counter = 0;
+      let tentativa = ""
+      
+      do {
+        tentativa = prompt("Informe a senha: ");
+        counter++;
+      } while(tentativa !== senha);
+      // o do-while é mais adequado nesse caso porque o usuário vai precisar tentar ao menos uma vez
+      // antes de acertar, que o do-while faz. o while tambem funcionaria, mas o do-while diz para o
+      // programador que o codigo vai ser executado no minimo uma vez.
+      
+      console.log(`Bem-vindo! Você acertou em ${counter} tentativa${(counter>1) ? "s" : ""}.`);
+    </script>
+  </body>
+</html>

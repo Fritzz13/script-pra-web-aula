@@ -5,7 +5,7 @@ let funcionarios = [
   { nome: "Rui", setor: "RH" },
   { nome: "Ana", setor: "TI" },
   { nome: "Caio", setor: "Vendas" }
-]
+];
 
 // fim da entrada
 

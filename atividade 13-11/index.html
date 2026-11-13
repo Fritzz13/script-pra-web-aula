@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>painel interativo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  
+  <body>
+    <header class="topo">
+      <div class="container">
+        <p class="identificacao">los scripts para la web</p>
+        <h1 id="titulo-principal">PAINEL interactive</h1>
+        <p id="subtitulo">descubra os secretos daqueles que foram ao inferno antes de voce</p>
+        <button id="themeButton" class="botao botao-secundario" type="button">Alternar destaque</button>
+      </div>
+    </header>
+    
+    <main class="container">
+      <section class="painel-filtros">
+        <div class="campo">
+          <label for="campo-busca">buscar curso</label>
+          <input id="campo-busca" type="search" placeholder="digite o nome do urso..." />
+        </div>
+        
+        <div class="campo">
+          <label for="filtro-area">filtrar por area</label>
+          <select id="filtro-area">
+            <option value="todos">tudo e todos</option>
+            <option value="programacao">programacao</option>
+            <option value="infraestrutura">infraestrutura</option>
+            <option value="design">designos</option>
+          </select>
+        </div>
+        <button id="clearButton" class="botao" type="button">limpar filtros</button>
+      </section>
+      
+      <p id="mensagem" class="mensagem" role="status">
+        explore os cursos disponiveis
+      </p>
+      
+      <section id="lista-cursos" class="grade-cursos" aria-label="lista de cursos">
+        <article class="card-curso" data-area="programacao">
+          <h2>javascript para la web</h2>
+          <p class="descricao">fundamentos da programaciones para paginas webberson</p>
+          <button class="botao botao-principal" type="button" data-acao="detalhes">ver detalhes</button>
+          <p class="detalhes oculto">variablès, funcciones, dom & evenctos</p>
+          <button class="botao botao-perigo" type=button data-acao="remover">remover</button>
+        </article>
+        
+        <article class="card-curso" data-area="infraestrutura">
+          <h2>mounting e manutention</h2>
+          <p class="descricao">sei la o chatgpt nao botou a descricao do urso no slide</p>
+          <button class="botao botao-principal" type="button" data-acao="detalhes">ver detalhes</button>
+          <p class="detalhes oculto">hardware, manutencao preventiva e corretiva</p>
+          <button class="botao botao-perigo" type=button data-acao="remover">remover</button>
+        </article>
+        
+        <article class="card-curso" data-area="design">
+          <h2>design de interfaces</h2>
+          <p class="descricao">graphic design is my passion</p>
+          <button class="botao botao-principal" type="button" data-acao="detalhes">ver detalhes</button>
+          <p class="detalhes oculto">hierarquia visual, cores e prototipacao</p>
+          <button class="botao botao-perigo" type=button data-acao="remover">remover</button>
+        </article>
+      </section>
+      
+      <section class="painel-cadastro">
+        <h2>adicionar curson hon hon hon</h2>
+        <form id="form-cadastro">
+          <div class="campo">
+            <label for="nome-curso">nome do curso</label>
+            <input id="nome-curso" name="nome" type="text" required placeholder="ex.: engenharia de prompt (a barra ta baixa)" />
+          </div>
+          <div class=campo>
+            <label for="area-curso">area</label>
+            <select id="area-curso" name="area" required>
+              <option value="programacao">programacao</option>
+              <option value="infraestrutura">infraestrutura</option>
+              <option value="design">designos</option>
+            </select>
+          </div>
+          <button class="botao botao-principal" type="submit">cadastrar curso</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer class="rodape">
+      <p>projeto didadido - dadasdripd e dom</p>
+    </footer>
+  </body>
+</html>
